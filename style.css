@@ -1,0 +1,448 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+img 
+{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer 
+{
+    /* background-color: rgb(100, 111, 75); */
+    background-color: aqua;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer img
+{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+
+    display: block;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 250%;   
+}
+
+nav
+{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    background-color: aqua;
+}
+
+nav ul
+{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li
+{
+    transition: 5s;
+    display: block;
+    flex: 1;
+}
+
+nav button
+{
+    width: 100%;
+    font-size: 200%;
+    padding: 3%;
+}
+
+
+/*CSS for responsive menu*/
+#hamIcon 
+{
+    display: none;
+
+    position: relative;
+    width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*to unhide menu items*/
+.menuShow 
+{
+    display: block;
+}
+
+.TopImageContainer 
+{
+    position: relative;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.InImageTextContainer
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1500%;
+    color: white;
+}
+
+.Para
+{
+    background-color: gray;
+    border: 5px solid rgb(100, 111, 75);
+    color: white;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 160%;
+}
+
+.galleryContainer
+{
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 2rem;
+
+    /* box-shadow: 25px 1px 70px black; */
+    scroll-snap-type: x mandatory; 
+    /* enables snapping behavior when a user scrolls horizontally (x) or vertically (y). */
+    /* mandatory: Tells the browser: "You must snap to the closest snap point after scrolling." */
+    scroll-snap-align: center;
+    /* It defines where each child item should snap into the scroll container when scrolling stops. */
+
+}
+
+.galleryContainer img
+{
+    border: 5px solid rgb(100, 111, 75);
+    border-radius: 50px;
+    max-width: 300px;
+    height: auto;
+
+    scroll-snap-align: center;
+}
+
+.galleryContainer :hover
+{
+    transform: scale(1.1) rotate(4deg);
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+
+
+.TreeAgeContainer
+{
+    background-color:rgb(100, 111, 75);
+    color: white;
+    font-size: 125%;
+    text-align: center;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+}
+
+.MethodsContainer
+{
+    display:flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.Method1Tree, .Method2Tree
+{
+    background-color: rosybrown;
+    padding-left: 2%;
+    padding-bottom: 25%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    width: 500px;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 5%;
+    box-shadow: 1px 1px 70px black;
+    position: relative;
+}
+
+.Method1Tree img, .Method2Tree img
+{
+    position: absolute; 
+    bottom: 2.6%;
+    left: 5%;
+    width: 90%;
+}
+
+.Tree
+{
+    font-size: 140%;
+    height: auto;
+    padding: 1%;
+}
+
+.Tree div
+{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.Tree h3
+{
+    text-align: center;
+    font-size: 165%;
+}
+
+.Tree img
+{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 25%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.Wood
+{
+    font-size: 140%;
+    height: auto;
+    padding: 1%;
+}
+
+.Wood h3
+{
+    text-align: center;
+    font-size: 165%;
+}
+
+.Wood img
+{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 25%;
+
+    display:flex;
+}
+
+
+#PineTree, #OakTree, #EcualptusTree, #TeakTree, #RubberTree 
+{
+    background-color:rgb(100, 111, 75);
+    color: white;
+
+    display:flex;
+    align-items:center;
+}
+
+#PineWood, #OakWood, #EcualptusWood, #TeakWood, #RubberWood
+{
+    display:flex;
+    align-items:center;
+}
+
+.FooterLinks 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;  
+    align-items: flex-start;    
+}
+
+.FooterLinks ul 
+{
+    list-style: none;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    gap: 10px;
+}
+
+.FooterLinks button 
+{
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 165%;
+    color: black;
+    cursor: pointer;
+}
+
+.FooterLinks button:hover 
+{
+    text-decoration: underline;
+}
+
+.FooterForms
+{
+    text-align: center;
+    justify-items: center;
+    font-size: 165%;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#NameField
+{
+    font-size: 25px;
+}
+
+#EmailField
+{
+    font-size: 25px;
+}
+
+@media (max-width:800px) 
+{
+    /*make a menu items vertical*/
+    nav ul li 
+    {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    #hamIcon 
+    {
+        display: block;
+    }
+
+    /*hide the menu item list*/
+    nav ul 
+    {
+        display: none;
+    }
+
+    h2
+    {
+        font-size: 200%;   
+    }
+
+    /* Top of the page */
+    .InImageTextContainer
+    {
+        font-size: 750%;
+        top: 75%;
+    }
+
+    /* Page 1 */
+    .Para
+    {
+        font-size: 120%;
+    }
+
+    .TreeAgeContainer
+    {
+        font-size: 120%;
+        padding: 5%;
+    }
+
+    .MethodsContainer
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Method1Tree, .Method2Tree
+    {
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    /* Page 2 */
+    .Tree
+    {
+        font-size: 100%;
+    }
+
+    .Tree h3
+    {
+        font-size: 160%;
+    }
+
+    .Wood
+    {
+        font-size: 100%;
+    }
+
+    .Wood h3
+    {
+        font-size: 160%;
+    }
+
+
+
+    /* Footer */
+    .FooterLinks button 
+    {
+        
+        font-size: 120%;
+        
+    }
+
+    .FooterLinks button:hover 
+    {
+        text-decoration: underline;
+    }
+
+    .FooterForms
+    {
+        font-size: 100%;
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #NameField
+    {
+        font-size: 15px;
+    }
+
+    #EmailField
+    {
+        font-size: 15px;
+    }
+}
+
