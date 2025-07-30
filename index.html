@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        
+        <!-- Allow web app to be run in full-screen mode - iOS. -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- Allow web app to be run in full-screen mode - Android. -->
+        <meta name="mobile-web-app-capable" content="yes">
+
+        
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+        <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+        
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Introduction</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="TopImageContainer">
+                <img src="images/TreeBackground.png" alt="TreeBackground" title="TreeBackground">
+                <h1 class="InImageTextContainer">Trees!</h1>
+            </div>
+        </header>
+        <nav> <!--menu system-->
+            <button id="hamIcon">Open Menu</button>
+            <ul>
+                <li><button id="page1btn">Home</button></li>
+                <li><button id="page2btn">Trees</button></li>
+                <li><button id="page3btn">MiniGame</button></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="page" id="page1">
+                <article>
+                    <h2>Did you know that?</h2>
+                    <p class="Para">
+                        Trees are big plants that grow from the ground. 
+                        They have strong wooden trunks, 
+                        green leaves, and roots that hold them in place. 
+                        Trees are very important because they give us fresh air to breathe, 
+                        shade on hot days, and homes for birds and animals. 
+                        Some grow fruits like apples or bananas, and others give us wood to build things.<br>
+                        <br>
+                        Trees come in many shapes and sizes, and you can find them almost everywhere. 
+                        In parks, gardens, forests, and even by the roadside. 
+                        They help keep our planet healthy and beautiful!
+                    </p>
+                </article>
+
+                <div class="galleryContainer">
+                    <img src="images/PineTree.png" alt="PineTree" title="PineTree" id="PineTreeImg">
+                    <img src="images/OakTree.png" alt="OakTree" title="OakTree" id="OakTreeImg">
+                    <img src="images/EcualptusTree.png" alt="EcualptusTree" title="EcualptusTree" id="EcualptusTreeImg">
+                    <img src="images/TeakTree.png" alt="TeakTree" title="TeakTree" id="TeakTreeImg">
+                    <img src="images/RubberTree.png" alt="RubberTree" title="RubberTree" id="RubberTreeImg">
+                </div>
+
+
+                <div class="TreeAgeContainer">
+                    <h3><b>
+                        Have you ever wondered how old a tree is? Trees don’t have birthdays like people, 
+                        but there are fun ways to find out how long they’ve been growing!</b>
+                    </h3>
+                    
+                    <div class="MethodsContainer">
+                        <div class="Method1Tree">
+                            <h2>Method 1:</h2>
+                            <h3>Counting the rings when a tree has been cut.</h3>
+                            <p>
+                                When a tree is cut, you can see a circle pattern inside the trunk, 
+                                these are called growth rings. One ring means one years old! 
+                                So if a tree have 10 rings that means its 10 years old!.
+                            </p>
+                            <img src="images/TreeRing.png" alt="Tree ring" title="Tree ring">
+                        </div>
+    
+                        <div class="Method2Tree">
+                            <h2>Method 2:</h2>
+                            <h3>Estimate Without Cutting the Tree</h3>
+                            <p>
+                                We don't want to hurt the tree as some might be the last of its kind, so scientist use other ways to find out.
+                                Like measuring how thick the trunk is using a measuring tape. 
+                                Some tree grows about 2.5cm per year (depending on the type), 
+                                Multiply the truck the size by how much it grows in a year and this gives an estimated age! 
+                                example (If he tree truck is 25cm thick and the tree grows 2.5cm per year then 25 / 2.5 = 10 year old)
+                            </p>
+                            <img src="images/MeasuringTree.png" alt="Measuring Tree with measuring tape" title="Measuring Tree with measuring tape">
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Some trees can live for hundreds or even thousands of years!
+                        The oldest tree in the world is over 4,800 years old, that’s older than the pyramids!
+                    </p>
+                </div>
+            </section>
+
+            <section class="page" id="page2">
+                <h2>Did you know that?</h2>
+                <!-- Pine Tree -->
+                <article class="Tree" id="PineTree">
+                    <img src="images/PineTree.png" alt="PineTree" title="PineTree">
+                    <div>
+                        <h3>Pine Tree</h3>
+                        <p>
+                            A pine tree is a tall, green tree that looks like a giant triangle! 
+                            It stays green all year long, even in winter, so it's called an evergreen tree. 
+                            Instead of soft, flat leaves, pine trees have thin, pointy needles, 
+                            these needles come in bunches and feel a little sharp. 
+                            Pine trees don’t grow flowers or fruit like some trees. 
+                            Instead, they grow pinecones, The often grow in forests and mountains. Some can grow very tall, 
+                            like towers! and Some pine species are grown specifically for use as Christmas trees during the holiday season.
+                        </p>
+                    </div>
+                </article>
+                <!-- Pine Wood -->
+                <div class="Wood" id="PineWood">
+                    <div>
+                        <h3>Pine wood</h3> 
+                        <p>
+                            Pine wood is classified as a softwood but its still strong and durable enough for many uses, 
+                            they are lightweight which mean they ware easy to carry, cut and shape. Perfect for DIY and Carpentry projects.
+                        </p>
+                    </div>
+                    
+                    <div id="PineWoodTable"></div>
+                </div>
+
+                <!-- Oak Tree -->
+                <div class="Tree" id="OakTree">
+                    <img src="images/OakTree.png" alt="OakTree" title="OakTree">
+                    <div>
+                        <h3>Oak Tree</h3>
+                        <p>
+                            The oak tree is a strong, beautiful tree that grows in many parts of the world. 
+                            It’s easy to spot because it often has thick, twisty branches and big, wavy leaves. 
+                            Oak trees are deciduous, which means they lose their leaves in the fall. 
+                            They can live for hundreds of years, even over 1,000!
+                        </p>
+                    </div>
+                </div>
+                <!-- Oak Wood -->
+                <div class="Wood" id="OakWood">
+                    <div>
+                        <h3>Oak wood</h3> 
+                        <p>
+                            Oak wood is consider as a strong and hard wood which are resists bending and damage. 
+                            And is enough for building houses, beams, and even boats out of them. 
+                            With their long-life spend and resistant to water (especially White Oak) they make good outdoor furnitures.
+                        </p>
+                    </div>
+
+                    <div id="OakWoodTable"></div>
+                </div>
+
+                <!-- Ecualptus Tree -->
+                <div class="Tree" id="EcualptusTree">
+                    <img src="images/EcualptusTree.png" alt="EcualptusTree" title="EcualptusTree">
+                    <div>
+                        <h3>EcualptusTree</h3>
+                        <p>
+                            A Eucalyptus tree is a tall tree that grows mostly in Australia, but you can find it in other warm places too. 
+                            It has smooth bark that peels off in pieces, and its leaves are long, thin, and smell really good, like minty candy!. 
+                            Eucalyptus trees are special because they are the favorite food of koalas! Koalas eat the leaves and even sleep in the branches. 
+                            The oil from eucalyptus leaves is used in medicine to help people feel better when they have a cold. 
+                            Some people even use eucalyptus in soaps and lotions because it smells so fresh!
+                        </p>
+                    </div>
+                </div>
+                <!-- Ecualptus Wood -->
+                <div class="Wood" id="EcualptusWood">
+                    <div>
+                        <h3>Ecualptus wood</h3> 
+                        <p>
+                            Eucalyptus wood is very strong and hard which does not break easily and great for outdoor furniture as they are water resistant. 
+                            Eucalyptus wood is also good for the Earth because the trees grow fast, so they can be replanted quickly and used again and again.
+                        </p>
+                    </div>
+
+                    <div id="EcualptusWoodTable"></div>
+                </div>
+
+                <!-- Teak Tree -->
+                <div class="Tree" id="TeakTree">
+                    <img src="images/TeakTree.png" alt="TeakTree" title="TeakTree">
+                    <div>
+                        <h3>TeakTree</h3>
+                        <p>
+                            A teak tree is a big, tall tree that grows in warm places like India, Thailand, Indonesia, 
+                            and some parts of Africa. It has thick, strong wood and very large leaves, and the tree can grow up to 30 meters 
+                            (that’s taller than a 10-story building!). In the summer, teak trees grow tiny white flowers, and in the fall, 
+                            their leaves fall off. That means teak is a deciduous tree.
+                        </p>
+                    </div>
+                </div>
+                <!-- Teak Wood -->
+                <div class="Wood" id="TeakWood">
+                    <div>
+                        <h3>Teak wood</h3> 
+                        <p>
+                            Teak is one of the strongest and most valuable types of wood in the world!, 
+                            Teak tree takes a long time to grow. sometimes up to 20 to 30 years! making them the most expensive wood. 
+                            other then it growing slowly, they don't get damaged by rain or sea water or even heat and has a natural oil inside that keeps away bugs like termites and wood-eating insects. 
+                            marking them an ideal for making boats and deck out of them.
+                        </p>
+                    </div>
+                    
+                    <div id="TeakWoodTable"></div>
+                </div>
+
+                <!-- Rubber Tree -->
+                <div class="Tree" id="RubberTree">
+                    <img src="images/RubberTree.png" alt="RubberTree" title="RubberTree">
+                    <div>
+                        <h3>Rubber Tree</h3>
+                        <p>
+                            A rubber tree is a tall tree that grows in warm, rainy places like Southeast Asia, South America, and Africa. 
+                            Its scientific name is Hevea brasiliensis (hee-vee-uh bra-sil-ee-en-sis). What makes it special? 
+                            It gives us natural rubber! 
+                            Inside the trunk of the rubber tree is a milky white liquid called latex. When people make a small cut in the bark, 
+                            the latex drips out, they are made into item in our daily life such as Tires for cars and bicycles,
+                            Erasers for pencils, Rubber bands, Shoes and boots, Gloves and balloons. Rubber tree can live up to 30 year which means alot of rubber.
+                        </p>
+                    </div>
+                </div>
+                <!-- Rubber Wood -->
+                <div class="Wood" id="RubberWood">
+                    <div>
+                        <h3>Rubber wood</h3> 
+                        <p>
+                            Rubber tree wood is also called rubberwood. But after about 25–30 years, rubber trees stop producing latex, 
+                            so instead of cutting them down and wasting them, people use the wood to make all kinds of useful things. 
+                            Just like Oak and Teak, RubberWood is consider to be hardwood which makes them great for furniture and children toys and etc.
+                        </p>
+                    </div>
+                    
+                    <div id="RubberWoodTable"></div>
+                </div>
+            </section>
+
+            <section class="page" id="page3">
+
+                <article>
+                    <p>X: <span id="x-value"></span></p>
+                    <p>Y: <span id="y-value"></span></p>
+
+                    <h2 id="Message">Game On!</h2>
+                    <!-- 3x3 Board -->
+                    <div id="GameBoard"></div>
+                    <button id="GameRestartButton">Reset the game</button>
+                    <div class="Instructions">
+                        <h3>Instructions</h3>
+                        <p>
+                            A little tiny tree seed has been planted for you in the middle of the GameBoard, 
+                            your goals is too help it grow by moving your mouse above it and watering it. 
+                            If anything goes wrong, you can click of the "reset gamebutton" to reset everything and start fresh.
+                        </p>
+                    </div>
+                </article>
+                <hr>
+
+                <h3 class="Quiz">Quiz</h3>
+                <article class="Quiz">
+                    <fieldset class="Question" id="Question1">
+                        <!-- 2 -->
+                        <legend>1. How many methods are there to help you know how old a tree is?</legend>
+                        <input type="radio" name="q1" value="5"> 5
+                        <input type="radio" name="q1" value="2"> 2
+                        <input type="radio" name="q1" value="4"> 4
+                        <input type="radio" name="q1" value="1"> 1
+                    </fieldset>
+
+                    <fieldset class="Question" id="Question2">
+                        <!-- Teak -->
+                        <legend>2. Which Tree or Wood type is consider the most valuable?</legend>
+                        <input type="radio" name="q2" value="Oak"> Oak
+                        <input type="radio" name="q2" value="Teak"> Teak
+                        <input type="radio" name="q2" value="Eucalyptus"> Eucalyptus
+                        <input type="radio" name="q2" value="Rubber"> Rubber
+                    </fieldset>
+
+                    <fieldset class="Question" id="Question3">
+                        <!-- Rubber -->
+                        <legend>3. Which Tree scientific name is called Hevea brasiliensis (hee-vee-uh bra-sil-ee-en-sis)?</legend>
+                        <input type="radio" name="q3" value="Pine"> Pine
+                        <input type="radio" name="q3" value="Eucalyptus"> Eucalyptus
+                        <input type="radio" name="q3" value="Rubber"> Rubber
+                        <input type="radio" name="q3" value="Teak"> Teak
+                    </fieldset>
+
+                    <fieldset class="Question" id="Question4">
+                        <!-- Pine -->
+                        <legend>4. Which Tree is grown specifically for holiday season?</legend>
+                        <input type="radio" name="q4" value="Eucalyptus"> Eucalyptus
+                        <input type="radio" name="q4" value="Teak"> Teak
+                        <input type="radio" name="q4" value="Oak"> Oak
+                        <input type="radio" name="q4" value="Pine"> Pine
+                    </fieldset>
+
+                    <fieldset class="Question" id="Question5">
+                        <!-- 2 -->
+                        <legend>5. How many Wood type can be used for outdoor furniture?</legend>
+                        <input type="radio" name="q5" value="2"> 2
+                        <input type="radio" name="q5" value="3"> 3
+                        <input type="radio" name="q5" value="4"> 4
+                        <input type="radio" name="q5 " value="5"> 5
+                    </fieldset>
+
+                    <button id="btnSubmit">Submit Quiz</button>
+                    <button id="btnReset">Reset Quiz</button>
+                    <h3 id="scorebox">Not submitted</h3>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <img src="images/FooterImage.png" title="FooterBg" alt="FooterBg">
+            <div class="FooterLinks">
+                <ul>
+                    <li><button id="page4btn">Home Page</button></li>
+                    <li><button id="page5btn">Trees Page</button></li>
+                    <li><button id="page6btn">MiniGame Page</button></li>
+                    <li><button id="Fullscreenbtn">FullScreen</button></li>
+                    <li><button id="ExitFullScreenbtn">Exit Full Screen</button></li>
+                </ul>
+            </div>
+
+            <div class="FooterForms">
+                <h2>Learn more!</h2>
+                <p>Subscribe to our newsletter to learn more.</p>
+
+                <div id="FormData">
+                    <label><input type="text" id="NameField"  name="NameField" placeholder="Name"></label>
+                    <label><input type="email" id="EmailField" name="EmailField" placeholder="Email"></label>
+                    <label><button id="SubmitField">Sign Up</button></label>
+                </div>
+            </div>
+
+            <div id="QrCodeImg">
+                <h3>Try It on mobile!</h3>
+                <img src="images/qrcode_omgitnoob.github.io.png" alt="QrCode" title="QrCode">
+                <p>Lab01_Ahmad_Alhafeez_254131E</p>
+            </div>
+        </footer>
+    </body>
+</html>
