@@ -1,0 +1,708 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img 
+{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer 
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+footer img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 250%;   
+}
+
+nav
+{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+    /* background-color: aqua; */
+    border-bottom: 1px solid black;
+}
+
+nav ul
+{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li
+{
+    transition: 5s;
+    display: block;
+    flex: 1;
+}
+
+nav button
+{
+    width: 100%;
+    font-size: 200%;
+    padding: 3%;
+}
+
+
+/*CSS for responsive menu*/
+#hamIcon 
+{
+    display: none;
+
+    position: relative;
+    width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*to unhide menu items*/
+.menuShow 
+{
+    display: block;
+}
+
+.TopImageContainer 
+{
+    position: relative;
+    height: 550px;
+    width: 100%;
+    height: auto;
+}
+
+.InImageTextContainer
+{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1500%;
+    color: white;
+}
+
+#page1, #page2, #page3
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.Para
+{
+    background-color: gray;
+    border: 5px solid rgb(100, 111, 75);
+    color: white;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 160%;
+}
+
+.galleryContainer
+{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 2rem;
+
+    /* box-shadow: 25px 1px 70px black; */
+    scroll-snap-type: x mandatory; 
+    /* enables snapping behavior when a user scrolls horizontally (x) or vertically (y). */
+    /* mandatory: Tells the browser: "You must snap to the closest snap point after scrolling." */
+    scroll-snap-align: center;
+    /* It defines where each child item should snap into the scroll container when scrolling stops. */
+
+}
+
+.galleryContainer img
+{
+    border: 5px solid rgb(100, 111, 75);
+    border-radius: 50px;
+    max-width: 300px;
+    height: auto;
+
+    scroll-snap-align: center;
+}
+
+.galleryContainer :hover
+{
+    transform: scale(1.1) rotate(4deg);
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+
+
+.TreeAgeContainer
+{
+    background-color:rgb(100, 111, 75);
+    color: white;
+    font-size: 125%;
+    text-align: center;
+    padding-left: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+}
+
+.MethodsContainer
+{
+    padding-top: 4%;
+    padding-bottom: 1%;
+    display:flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.Method1Tree, .Method2Tree
+{
+    background-color: rosybrown;
+    padding: 2%;
+    padding-bottom: 18%;
+    box-sizing: border-box;
+    width: 500px;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 5%;
+    box-shadow: 1px 1px 70px black;
+    position: relative;
+}
+
+.Method1Tree img, .Method2Tree img
+{
+    position: absolute; 
+    bottom: 2.6%;
+    left: 5%;
+    width: 90%;
+}
+
+.Tree, .Wood
+{
+    font-size: 140%;
+    height: auto;
+    padding: 1%;
+}
+
+.Tree p, .Wood p
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.Tree h3, .Wood h3
+{
+    text-align: center;
+    font-size: 165%;
+}
+
+.Tree img
+{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 25%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#PineTree, #OakTree, #EcualptusTree, #TeakTree, #RubberTree 
+{
+    background-color:rgb(100, 111, 75);
+    color: white;
+
+    display:flex;
+    align-items:center;
+}
+
+#PineWood, #OakWood, #EcualptusWood, #TeakWood, #RubberWood
+{
+    display:flex;
+    align-items:center;
+}
+
+#PineWoodTable
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; /* Making  the element's height be the same as its width  */
+
+    background: url('images/sprite_sheet.png') no-repeat -755px -5px;
+	max-width: 365px;
+	height: 365px;
+}
+
+#OakWoodTable
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; /* Making  the element's height be the same as its width  */
+
+    background: url('images/sprite_sheet.png') no-repeat -380px -5px;
+	max-width: 365px;
+	height: 365px;
+}
+
+#EcualptusWoodTable
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; /* Making  the element's height be the same as its width  */
+
+    background: url('images/sprite_sheet.png') no-repeat -5px -5px;
+	max-width: 365px;
+	height: 365px;
+}
+
+#TeakWoodTable
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; /* Making  the element's height be the same as its width  */
+
+    background: url('images/sprite_sheet.png') no-repeat -380px -380px;
+	max-width: 365px;
+	height: 365px;
+}
+
+#RubberWoodTable
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1; /* Making  the element's height be the same as its width  */
+
+    background: url('images/sprite_sheet.png') no-repeat -5px -380px;
+	max-width: 365px;
+	height: 365px;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Game */
+#GameBoard
+{
+    position: relative;
+    width: 100%;
+    max-width: 540px; /* don't go larger than 540px */
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 5px rgb(100, 111, 75) solid;
+    border-radius: 24px;
+}
+
+#GameBoard div
+{
+    /* 540px divide 2 you will get 270 */
+    width: 100%;
+    max-height: 270px;
+    aspect-ratio: 1 / 1;
+}
+
+#GameBoard div img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* ensures the entire image fits inside the container. */
+    
+}
+
+.WaterDropletImg 
+{
+    width: 40px;
+    height: 40px;
+    pointer-events: none; /* Let clicks pass through the image */
+}
+
+.Instructions
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+#GameRestartButton
+{
+    margin-top: 1%;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding: 1%;
+    font-size: 80%;
+}
+
+#Message
+{
+    animation-name: ChangeColour;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ChangeColour 
+{
+    0%   {color:rgb(255, 0, 0);}
+    25%  {color:rgb(100, 111, 75)}
+    50%  {color:rgb(255, 0, 0);}
+    75%  {color:rgb(100, 111, 75);}
+    100% {color:rgb(255, 0, 0);}
+  }
+
+/* ------------------------------------------------------------------------------ */
+/* Quiz */
+
+.Quiz
+{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+fieldset
+{
+    margin-bottom: 3%;
+    padding: 1%;
+
+}
+
+#btnSubmit
+{
+    padding: 1%;
+    font-size: 80%;
+}
+
+#btnReset
+{
+    padding: 1%;
+    font-size: 80%;
+}
+
+.AnsCorrect
+{
+    color: green;
+}
+
+
+.AnsWrong
+{
+    color: red;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Footer */
+.FooterLinks 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;    
+    box-sizing: border-box;
+}
+
+.FooterLinks ul 
+{
+    list-style: none;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    gap: 10px;
+}
+
+.FooterLinks button 
+{
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 165%;
+    color: black;
+    cursor: pointer;
+}
+
+.FooterLinks button:hover 
+{
+    text-decoration: underline;
+}
+
+.FooterForms
+{
+    text-align: center;
+    justify-items: center;
+    font-size: 165%;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.FooterForms p
+{
+    padding-bottom: 4%;
+}
+
+#QrCodeImg
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 10%;
+
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    transform: translate(-80%, -50%);
+}
+
+#QrCodeImg p
+{
+    font-size: 115%;
+}
+
+#NameField
+{
+    font-size: 25px;
+    margin-bottom: 4%;
+    width: 400px;
+    padding: 1%;
+}
+
+#EmailField
+{
+    font-size: 20px;
+    width: 250px;
+    padding: 1%;
+}
+
+#SubmitField
+{
+    width: 140px;
+    height: 40px;
+    padding: 1%;
+}
+
+
+
+
+
+@media (max-width:800px) 
+{
+    /*make a menu items vertical*/
+    nav ul li 
+    {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    #hamIcon 
+    {
+        display: block;
+        width: 100%;
+    }
+
+    /*hide the menu item list*/
+    nav ul 
+    {
+        display: none;
+    }
+
+    h2
+    {
+        font-size: 200%;   
+    }
+
+    
+    /* Top of the page */
+    .InImageTextContainer
+    {
+        font-size: 750%;
+        top: 70%;
+    }
+
+
+    /* Page 1 */
+    .Para
+    {
+        font-size: 120%;
+    }
+
+    .TreeAgeContainer
+    {
+        font-size: 120%;
+        padding: 5%;
+    }
+
+    .MethodsContainer
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Method1Tree, .Method2Tree
+    {
+        width: 90%;
+        max-width: 500px;
+        padding-bottom: 60%;
+    }
+
+    .Method2Tree
+    {
+        width: 90%;
+        max-width: 500px;
+        padding-bottom: 52%;
+    }
+    
+
+    /* Page 2 */
+    .Tree, .Wood
+    {
+        font-size: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .Tree h3, .Wood h3
+    {
+        font-size: 160%;
+    }
+
+    #PineWoodTable
+    {
+        max-width: 100px;
+        max-height: 100px;
+        background-size: 1050px 300px;
+    }
+
+    #OakWoodTable
+    {
+        max-width: 100px;
+        height: 100px;
+        background-size: 675px 300px;
+    }
+
+    #EcualptusWoodTable
+    {
+        max-width: 100px;
+        height: 100px;
+        background-size: 300px 300px; 
+    }
+
+    #TeakWoodTable
+    {
+        max-width: 100px;
+        height: 100px;
+        background-size: 675px 675px; 
+    }
+    #RubberWoodTable
+    {
+        max-width: 100px;
+        height: 100px;
+        background-size: 300px 675px;
+    }
+
+
+
+    /* Game */
+    #GameBoard
+    {
+        width: 90%;
+    }
+
+    #GameRestartButton
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 30%;
+        margin-right: auto;
+    }
+
+    #GameRestartButton
+    {
+        margin-top: 5%;
+    }
+
+    
+    
+
+
+    /* Footer */
+    .FooterLinks
+    {
+        display: none;
+    }
+
+    .FooterForms
+    {
+        font-size: 100%;
+        width: 90%;
+        height: auto;
+        font-size: 80%;
+    }
+
+    #NameField
+    {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    #EmailField
+    {
+        font-size: 15px;
+        width: 140px;
+    }
+
+    #SubmitField
+    {
+        font-size: 10px;
+        width: 60px;
+        height: 25px;
+    }
+
+    #QrCodeImg
+    {
+        display: none;
+    }
+}
+

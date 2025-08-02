@@ -1,0 +1,13 @@
+{
+    "name": "WebDev Demo14 PWA",
+    "short_name": "Introduction to Trees",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#646f4b",
+    "theme_color": "#00FF00",
+    "icons": [
+    { "src": "OakTree.png",
+    "sizes": "64x64",
+    "type": "image/png" }
+    ]
+}
